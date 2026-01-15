@@ -1,0 +1,23 @@
+## Lab 1 – Virtual Pet Generator
+
+Student Name: Hiyaben Hareshbhai Jayswal
+Enrollment Number: 200578344
+Subject Code: COMP1073-26W-21138
+
+## Objective
+
+Create an interactive webpage that generates a random virtual pet. Users can change the pet’s name, age, and hunger status, and see the profile update immediately.
+
+## Features
+
+Random pet type, age, mood, and favorite activity
+Update pet name using input
+Increase or decrease pet age with buttons
+Toggle hunger status (hungry / not hungry)
+Fun description updates dynamically
+
+## How It Works
+
+Variables store pet information: petName, petType, petAge, isHungry, favoriteActivities, mood
+Random values are generated using Math.random() and Math.floor()
+JavaScript updates the webpage dynamically whenever the user changes the name, age, or hunger
