@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 1 – Virtual Pet Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Virtual Pet Generator</h1>
+
+    <div id="petCard">
+        <p id="petDescription"></p>
+    </div>
+
+    <h2>Customize Your Pet</h2>
+
+    <label>
+        Pet Name: 
+        <input type="text" id="nameInput" placeholder="Enter pet name">
+    </label>
+    <button onclick="updateName()">Update Name</button>
+
+    <br><br>
+
+    <button onclick="increaseAge()">Increase Age</button>
+    <button onclick="decreaseAge()">Decrease Age</button>
+
+    <br><br>
+
+    <button onclick="toggleHunger()">Toggle Hunger</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
