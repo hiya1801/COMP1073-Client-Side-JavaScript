@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Name: Hiyaben Hareshbhai Jayswal
+    Student No.: 200578344
+    Assignment 1: See 'N' Say Storymaker Emulator -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 1 - See 'N' Say Storymaker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="titleBlock">
+      <div class="logo" aria-hidden="true">HJ</div>
+      <div>
+        <h1>See ’N’ Say Storymaker</h1>
+        <p class="sub">
+          Click each button to cycle choices, then press <strong>Show Story</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="student">
+      <span class="pill">Hiyaben Hareshbhai Jayswal</span>
+  </header>
+
+  <main class="wrap">
+    <section class="panel">
+      <div class="panelTop">
+        <h2>Build your story</h2>
+
+        <div class="topButtons">
+          <button id="btnRandom" class="btn small" type="button">Random</button>
+          <button id="btnReset" class="btn small ghost" type="button">Reset</button>
+        </div>
+      </div>
+
+      <div class="slots">
+        <div class="slot">
+          <span class="slotLabel">1) Who?</span>
+          <button id="part0" class="btn slotBtn" type="button">Click to choose</button>
+          <p id="choice0" class="choice">—</p>
+        </div>
+
+        <div class="slot">
+          <span class="slotLabel">2) Did what?</span>
+          <button id="part1" class="btn slotBtn" type="button">Click to choose</button>
+          <p id="choice1" class="choice">—</p>
+        </div>
+
+        <div class="slot">
+          <span class="slotLabel">3) Like what?</span>
+          <button id="part2" class="btn slotBtn" type="button">Click to choose</button>
+          <p id="choice2" class="choice">—</p>
+        </div>
+
+        <div class="slot">
+          <span class="slotLabel">4) Where?</span>
+          <button id="part3" class="btn slotBtn" type="button">Click to choose</button>
+          <p id="choice3" class="choice">—</p>
+        </div>
+
+        <div class="slot">
+          <span class="slotLabel">5) When?</span>
+          <button id="part4" class="btn slotBtn" type="button">Click to choose</button>
+          <p id="choice4" class="choice">—</p>
+        </div>
+      </div>
+
+      <div class="finishRow">
+        <button id="btnStory" class="btn big" type="button">Show Story</button>
+        <button id="btnSpeak" class="btn big ghost" type="button">Speak</button>
+      </div>
+    </section>
+
+    <section class="panel output">
+      <h2>Your story</h2>
+      <p id="storyText" class="storyBox">Pick your parts to create a story…</p>
+
+      <div class="miniNote">
+        Tip: Press Random → Show Story → Speak.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>-- By HIYABEN HARESHBHAI JAYSWAL (Assignment_1 - See 'N' Say Storymaker Emulator)</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
