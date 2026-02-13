@@ -3,6 +3,13 @@
   Student No.: 200578344
 */
 
+/*ATTRIBUTION / REFERENCES
+This web application emulates the behavior of the Mattel® See 'N' Say Storymaker toy.
+Interaction reference video:
+"See 'N' Say Storymaker Demonstration"
+Uploaded by limegl0wstix (2010)
+https://www.youtube.com/watch?v=gG8y_e6t0G4*/
+
 "use strict";
 
 //Required story parts (5 slots)
