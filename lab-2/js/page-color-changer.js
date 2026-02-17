@@ -25,3 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   redSlider.addEventListener("input", updateBackgroundColor);
   greenSlider.addEventListener("input", updateBackgroundColor);
   blueSlider.addEventListener("input", updateBackgroundColor);
+    // 4) INITIALIZE ON PAGE LOAD
+  // Set the initial background color based on the default slider values (0,0,0).
+  updateBackgroundColor();
+});
