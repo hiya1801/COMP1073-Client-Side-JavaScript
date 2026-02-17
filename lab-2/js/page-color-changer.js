@@ -10,3 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // document.documentElement is the <html> element.
   const htmlElement = document.documentElement;
+  // 2) FUNCTION: UPDATE BACKGROUND COLOR
+  /* Reads the slider values and updates the background-color of the page.
+     Background color format: rgb(redValue, greenValue, blueValue) */
+  function updateBackgroundColor() {
+    // Get slider values (strings) and convert them to numbers
+    const r = Number(redSlider.value);
+    const g = Number(greenSlider.value);
+    const b = Number(blueSlider.value);
+     // Apply the RGB color to the <html> element background
+    htmlElement.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+  }
