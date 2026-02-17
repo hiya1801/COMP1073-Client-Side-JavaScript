@@ -21,3 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
      // Apply the RGB color to the <html> element background
     htmlElement.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
   }
+  // 3) EVENT HANDLERS (INPUT LISTENERS)
+  redSlider.addEventListener("input", updateBackgroundColor);
+  greenSlider.addEventListener("input", updateBackgroundColor);
+  blueSlider.addEventListener("input", updateBackgroundColor);
