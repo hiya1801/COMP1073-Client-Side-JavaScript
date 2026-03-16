@@ -85,3 +85,10 @@ select { padding:8px 12px; border-radius:8px; border:1px solid #ccc; }
     transition: opacity 0.3s;
 }
 .image-box:hover::after { opacity:1; }
+
+/* Animation */
+@keyframes dropIn {
+    0% { transform: translateY(-50px) scale(0.5); opacity:0; }
+    100% { transform: translateY(0) scale(1); opacity:1; }
+}
+.animate-drop { animation: dropIn 0.9s ease forwards; }
