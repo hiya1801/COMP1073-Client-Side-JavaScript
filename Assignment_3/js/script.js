@@ -34,3 +34,11 @@ class EnergyBowl {
         return price.toFixed(2);
     }
 }
+
+// Helper to get image path
+function getImage(category, name) {
+    return `images/${category}/${name}.jpg`;
+}
+
+// Price map
+const prices = { base: 5, fruits:1, toppings:0.75, proteins:2, small:0, medium:2, large:4 };
