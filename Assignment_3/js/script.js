@@ -42,3 +42,30 @@ function getImage(category, name) {
 
 // Price map
 const prices = { base: 5, fruits:1, toppings:0.75, proteins:2, small:0, medium:2, large:4 };
+
+// Form submission
+document.getElementById("bowlForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const base = document.getElementById("base").value;
+    const size = document.querySelector("input[name='size']:checked")?.value;
+    const fruits = Array.from(document.querySelectorAll("input[name='fruits']:checked")).map(f=>f.value);
+    const toppings = Array.from(document.querySelectorAll("input[name='toppings']:checked")).map(t=>t.value);
+    const proteins = Array.from(document.querySelectorAll("input[name='proteins']:checked")).map(p=>p.value);
+
+    // Validation
+    if(!base){ alert("Please select a base!"); return; }
+    if(!size){ alert("Please select a size!"); return; }
+    if(fruits.length===0){ alert("Please select at least one fruit!"); return; }
+
+    const myBowl = new EnergyBowl(base,size,fruits,toppings,proteins);
+
+    document.getElementById("bowlDescription").innerHTML =
+        myBowl.getDescription() + `<br>Price: $${myBowl.calculatePrice()}`;
+
+    const bowlImagesDiv = document.getElementById("bowlImages");
+    bowlImagesDiv.innerHTML = "";
+
+    let delay = 0;
+
+    
