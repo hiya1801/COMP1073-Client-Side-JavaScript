@@ -103,7 +103,6 @@ function displayCars(){
     let container = document.getElementById("carContainer")
 
     container.innerHTML = ""
-
     cars.forEach(function(car){
         container.innerHTML += `
         <div class="car-card">
