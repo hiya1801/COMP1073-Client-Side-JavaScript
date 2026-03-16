@@ -127,15 +127,10 @@ function displayCars(){
 /* allows user to change the color
 of a selected toy car object */
 function changeColor(){
-
     let carIndex = document.getElementById("carSelect").value
-
     let newColor = document.getElementById("colorInput").value
-
     cars[carIndex].color = newColor
-
     displayCars()
-
 }
 //run displayCars function when page loads
 displayCars()
