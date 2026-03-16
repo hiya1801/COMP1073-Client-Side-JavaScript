@@ -1,0 +1,64 @@
+<!-- Hiyaben Hareshbhai Jayswal -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Bowl Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Energy Bowl Builder</h1>
+        <p>Build your perfect healthy energy bowl!</p>
+    </header>
+
+    <main>
+        <!-- Form Section -->
+        <form id="bowlForm">
+            <!-- Bowl Base -->
+            <section class="form-section">
+                <h2>Bowl Base</h2>
+                <select id="base" required>
+                    <option value="" disabled selected>Select Base</option>
+                    <option value="acai">Acai</option>
+                    <option value="yogurt">Yogurt</option>
+                    <option value="oatmeal">Oatmeal</option>
+                    <option value="chia">Chia Pudding</option>
+                </select>
+            </section>
+
+            <!-- Size Selection -->
+            <section class="form-section">
+                <h2>Size</h2>
+                <label><input type="radio" name="size" value="small"> Small (+ $0)</label>
+                <label><input type="radio" name="size" value="medium"> Medium (+ $2)</label>
+                <label><input type="radio" name="size" value="large"> Large (+ $4)</label>
+            </section>
+
+            <!-- Fruits -->
+            <section class="form-section">
+                <h2>Fruits</h2>
+                <label><input type="checkbox" name="fruits" value="banana"> Banana</label>
+                <label><input type="checkbox" name="fruits" value="strawberry"> Strawberry</label>
+                <label><input type="checkbox" name="fruits" value="blueberry"> Blueberry</label>
+                <label><input type="checkbox" name="fruits" value="mango"> Mango</label>
+                <label><input type="checkbox" name="fruits" value="kiwi"> Kiwi</label>
+            </section>
+
+
+
+            <button type="submit" class="submit-btn">Place Order</button>
+        </form>
+
+        <!-- Output Section -->
+        <section id="output">
+            <h2>Your Bowl</h2>
+            <div id="bowlDescription"></div>
+            <div id="bowlImages"></div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
