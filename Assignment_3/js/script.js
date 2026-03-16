@@ -68,4 +68,29 @@ document.getElementById("bowlForm").addEventListener("submit", function(e){
 
     let delay = 0;
 
-    
+    // Add base
+    addImage("bases", base, prices.base + prices[size], bowlImagesDiv, delay);
+    delay += 200;
+
+    // Fruits
+    fruits.forEach(fruit => { addImage("fruits", fruit, prices.fruits, bowlImagesDiv, delay); delay += 200; });
+
+    // Toppings
+    toppings.forEach(topping => { addImage("toppings", topping, prices.toppings, bowlImagesDiv, delay); delay += 200; });
+
+    // Proteins
+    proteins.forEach(protein => { addImage("proteins", protein, prices.proteins, bowlImagesDiv, delay); delay += 200; });
+});
+
+// Add image with animation and tooltip
+function addImage(category, name, price, container, delay){
+    const box = document.createElement("div");
+    box.classList.add("image-box","animate-drop");
+    box.style.animationDelay = delay + "ms";
+    box.setAttribute("data-price", `$${price}`);
+    const img = document.createElement("img");
+    img.src = getImage(category,name);
+    img.alt = name;
+    box.appendChild(img);
+    container.appendChild(box);
+}
