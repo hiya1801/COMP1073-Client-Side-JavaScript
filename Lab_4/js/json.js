@@ -18,3 +18,14 @@ async function populate() {
     showTopFlavors(data);  // display flavors
 }
 populate();
+// Populate header dynamically
+function populateHeader(data) {
+    const h1 = document.createElement('h1');
+    h1.textContent = ":) Welcome " + data.companyName + " :)";
+
+    const p = document.createElement('p');
+    p.textContent = ` ${data.headOffice} |  Since ${data.established}`;
+
+    header.appendChild(h1);
+    header.appendChild(p);
+}
