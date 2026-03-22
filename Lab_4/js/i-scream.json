@@ -25,12 +25,6 @@
             "ingredients": ["strawberry syrup","rainbow sprinkles","whipped cream"],
             "image": "strawberry-sprinkle.svg"
         },
-        {
-            "name": "Chocolate Dream Deluxe",
-            "calories": 500,
-            "type": "gelato",
-            "ingredients": ["dark cocoa","milk cream","chocolate fudge"],
-            "image": "ice-cream-xtra1.svg"
-        }
+
     ]
 }
