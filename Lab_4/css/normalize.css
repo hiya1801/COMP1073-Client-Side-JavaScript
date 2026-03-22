@@ -1,0 +1,132 @@
+/*
+Name: Hiyaben Haresbhai Jayswal
+Student ID: 200578344
+*/
+
+/* Basic document settings */
+html {
+  line-height: 1.15; /* consistent line spacing */
+  -webkit-text-size-adjust: 100%; /* prevent font resize on mobile */
+}
+
+/* Remove default margin */
+body {
+  margin: 0;
+}
+
+/* Ensure main behaves properly */
+main {
+  display: block;
+}
+
+/* Headings */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Horizontal rule fix */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Monospace elements */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Links */
+a {
+  background-color: transparent;
+}
+
+/* Text formatting */
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+/* Subscript & superscript */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Images */
+img {
+  border-style: none;
+}
+
+/* Form elements reset */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* Buttons */
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  -webkit-appearance: button;
+}
+
+/* Remove inner padding (Firefox) */
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* Textarea */
+textarea {
+  overflow: auto;
+}
+
+/* Checkbox & radio */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Search input */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/* File upload button */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* Hidden elements */
+[hidden] {
+  display: none;
+}

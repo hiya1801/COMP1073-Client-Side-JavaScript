@@ -1,0 +1,61 @@
+/*
+Name: Hiyaben Haresbhai Jayswal
+Student ID: 200578344
+*/
+
+/* Base layout */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background: linear-gradient(to right, #ffe0ec, #fff6e0);
+	margin: 0;
+	padding: 20px;
+}
+
+/* Header */
+h1 { text-align: center; font-size: 3rem; color: #d63384; margin-bottom: 10px; }
+header p { text-align: center; font-size: 1.2rem; color: #444; margin-bottom: 40px; }
+
+/* Section layout */
+section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+/* Ice cream card */
+article {
+	background: white;
+	border-radius: 15px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+	padding: 20px;
+	width: 260px;
+	text-align: center;
+	transition: transform 0.3s;
+}
+
+article:hover { transform: scale(1.05); }
+
+/* Image */
+article img { height: 120px; margin-bottom: 10px; }
+
+/* Title */
+h2 { color: #ff7a00; font-size: 1.5rem; margin-bottom: 10px; }
+
+/* Badges */
+.badge {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 5px;
+	border-radius: 10px;
+	font-size: 0.9rem;
+	color: white;
+}
+.calories { background-color: #ff4d6d; }
+.type { background-color: #6a5acd; }
+
+/* Ingredients list */
+ul { text-align: left; padding-left: 20px; }
